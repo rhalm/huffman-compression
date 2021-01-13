@@ -1,0 +1,5 @@
+*.o
+*.obj
+debugmalloc.h
+debugmalloc.c
+
