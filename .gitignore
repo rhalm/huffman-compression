@@ -1,5 +1,5 @@
-*.o
-*.obj
-debugmalloc.h
-debugmalloc.c
+src/*.o
+src/*.obj
+src/debugmalloc.h
+src/debugmalloc.c
 
