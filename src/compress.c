@@ -3,14 +3,13 @@
 #include <string.h>
 #include "huffman.h"
 
-/* Egyes karakterek elofordulasanak megszamolasa, visszateresi ertek: az input hossza */
 int update_char_frequencies(FILE* orig_file, int* char_freq) {
     int orig_bytes = 0;
     int c = fgetc(orig_file);
 
     while(!feof(orig_file)) {
-           char_freq[c]++;
-           orig_bytes++;
+           char_freq[c]++; // count frequency of character
+           orig_bytes++; // and how many bytes the file is
            c = fgetc(orig_file);
     }
     return orig_bytes;
